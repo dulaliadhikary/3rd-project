@@ -1,0 +1,380 @@
+/*-------====== common css start ======------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Share+Tech&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+     font-family: 'Share Tech', sans-serif; */
+
+:root {
+    --pink: #f7b3d436;
+    --red: #b10505;
+    --blue: #0000FF;
+    --cyan: #00FFFF;
+    --white: #fff;
+    --black: #333;
+    --light-black: #666;
+    --body-color: #3333330c;
+    --black-middle-color: #4133332d;
+    --black-opacity: #3333330e;
+    --youtube-color: #FF0000;
+    --facebook-color: #3A5795;
+    --twiter-color: #1DA1F2;
+    --linkedin-color: #8f00ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.heading h1 {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.heading a {
+    color: var(--light-black);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+h2 {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+h3 {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+p {
+    color: var(--lite-black);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* -----====== common css end ======------- */
+
+
+/* scroll start  */
+
+.scroll {
+    position: fixed;
+    bottom: 65px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    outline: none;
+    text-align: center;
+}
+
+.scroll a {
+    color: var(--white);
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+/* scroll end  */
+
+
+/* -----====== header-area css start ======------- */
+
+.header-top-area {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px var(--black-opacity);
+    top: 0;
+    z-index: 1;
+}
+
+.header-top-area .header-top .logo {
+    width: 350px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.header-top-area .header-top .logo {
+    width: 350px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.header-top-area .header-top .logo img {
+    width: 250px;
+    height: 100%;
+}
+
+.header-top-area .header-top .logo-icon {
+    width: 150px;
+    text-align: start;
+    padding: 0 10px;
+}
+
+.header-top-area .header-top .logo-icon i {
+    font-size: 30px;
+    color: var(--black);
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.header-top-area .header-top .logo-icon ul {
+    position: absolute;
+    width: 150px;
+    background-color: var(--white);
+    text-align: start;
+    top: 70px;
+    padding: 0;
+    display: none;
+}
+
+.header-top-area .header-top .logo-icon ul li a {
+    color: var(--black);
+    font-size: 18px;
+    line-height: 30px;
+    transition: all linear .3s;
+}
+
+.header-top-area .header-top .logo-icon ul li {
+    padding: 0 10px;
+    transition: all linear .3s;
+}
+
+.header-top-area .header-top .logo-icon ul li:hover {
+    background-color: var(--light-black);
+}
+
+.header-top-area .header-top .logo-icon ul li a:hover {
+    color: var(--blue);
+}
+
+.header-top-area .header-top .header-top-search {
+    width: 350px;
+}
+
+.header-top-area .header-top .header-top-search input {
+    width: 100%;
+    background-color: var(--black-middle-color);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 10px;
+    margin: 14px 0;
+}
+
+.header-top-area .header-top .header-top-right {
+    justify-content: end;
+    float: left;
+    margin: 14px 0;
+    width: 570px;
+}
+
+.header-top-area .header-top .header-top-right .header-btn {
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 45px;
+    border-radius: 4px;
+    padding: 0px 10px;
+    border: none;
+    transition: all linear .3s;
+}
+
+.header-top-area .header-top .header-top-right .header-btn:hover {
+    background-color: var(--black);
+}
+
+.header-top-area .header-top .header-top-right .header-top-icons {
+    width: 250px;
+    text-align: end;
+}
+
+.header-top-area .header-top .header-top-right .header-top-icons a {
+    color: var(--black);
+    line-height: 40px;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+
+/* right area start  */
+
+.header-right-area {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+    top: 70px;
+    background-color: var(--white);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.185);
+}
+
+.header-right-area .navber ul {
+    padding: 0;
+}
+
+.header-right-area .navber ul li {
+    position: relative;
+    transition: all linear .3s;
+}
+
+.header-right-area .navber ul li:hover {
+    background-color: var(--blue);
+}
+
+.header-right-area .navber ul li a {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    transition: all linear .3s;
+}
+
+.header-right-area .navber ul li:hover a {
+    color: var(--white);
+}
+
+.header-right-area .navber ul li i {
+    padding: 0 20px;
+}
+
+.header-right-area .navber ul li .fa-caret-down {
+    float: right;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+
+/* -----====== header-area css end ======------- */
+
+
+/* ------=======banner-right section start ========------ */
+
+.banner-right-area {
+    position: absolute;
+    width: 210px;
+    top: 80px;
+    right: 3%;
+}
+
+.banner-right-area .banner-right-card {
+    width: 100%;
+    padding: 60px 0px;
+    margin: 8px 0;
+}
+
+.banner-right-area .banner-right .banner-right-img {
+    width: 170px;
+    height: 300px;
+    border: 1px solid #3331312c;
+    box-shadow: 0 0 2px 1px #3331312c;
+    margin: 10px 50px;
+    border-radius: 4px;
+    background-color: #0000FF;
+}
+
+
+/* ------=======banner-right section end ========------ */
+
+
+/* ------=======live-stream section start ========------ */
+
+.live-stream-area {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 10%;
+    left: 21%;
+}
+
+.live-stream-area .live-stream {
+    width: 100%;
+    /* height: auto; */
+}
+
+.live-stream-area .live-stream .live-stream-card {
+    width: 100%;
+    height: 130px;
+    background-color: var(--pink);
+    box-shadow: 0 0 1px 8px var(--black-middle-color);
+    margin: 0px 19px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.live-stream-area .live-stream .live-stream-card .live-stream-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+}
+
+.live-stream-area .live-stream .live-stream-card .live-stream-content {
+    position: absolute;
+    bottom: 0;
+    margin: 0 16px;
+    text-align: center;
+}
+
+.live-stream-area .live-stream .live-stream-card .live-stream-content h3 {
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.live-stream-area .live-stream .live-stream-card .live-stream-content span {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.live-stream-area .live-stream .live-stream-card .live-stream-content i {
+    font-size: 7px;
+    position: absolute;
+    color: var(--red);
+    bottom: 10px;
+    padding: 0 3px;
+}
+
+
+/* ------=======live-stream section end ========------ */
